@@ -6,8 +6,8 @@ CREATE EXTERNAL TABLE IF NOT EXISTS DESAFIO_CURSO.TBL_REGIAO (
     )
 COMMENT 'Tabela de regiao'
 ROW FORMAT DELIMITED
-FIELDS TERMINATED BY '|'
+FIELDS TERMINATED BY ';'
 STORED AS TEXTFILE
-location '/datalake/raw/regiao/'
+location '/datalake/raw/REGIAO/'
 TBLPROPERTIES ("skip.header.line.count"="1")
 ;

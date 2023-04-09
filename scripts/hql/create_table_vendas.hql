@@ -1,7 +1,7 @@
 CREATE DATABASE IF NOT EXISTS DESAFIO_CURSO;
 
 CREATE EXTERNAL TABLE IF NOT EXISTS DESAFIO_CURSO.TBL_VENDAS ( 
-    Actual_Delivery_Date sting,
+    Actual_Delivery_Date string,
     CustomerKey string,
     DateKey string,
     Discount_Amount string,
@@ -25,8 +25,8 @@ CREATE EXTERNAL TABLE IF NOT EXISTS DESAFIO_CURSO.TBL_VENDAS (
     )
 COMMENT 'Tabela de vendas'
 ROW FORMAT DELIMITED
-FIELDS TERMINATED BY '|'
+FIELDS TERMINATED BY ';'
 STORED AS TEXTFILE
-location '/datalake/raw/vendas/'
+location '/datalake/raw/VENDAS/'
 TBLPROPERTIES ("skip.header.line.count"="1")
 ;

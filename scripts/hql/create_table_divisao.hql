@@ -6,8 +6,8 @@ CREATE EXTERNAL TABLE IF NOT EXISTS DESAFIO_CURSO.TBL_DIVISAO (
     )
 COMMENT 'Tabela de divisao'
 ROW FORMAT DELIMITED
-FIELDS TERMINATED BY '|'
+FIELDS TERMINATED BY ';'
 STORED AS TEXTFILE
-location '/datalake/raw/divisao/'
+location '/datalake/raw/DIVISAO/'
 TBLPROPERTIES ("skip.header.line.count"="1")
 ;
